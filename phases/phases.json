@@ -1,0 +1,11 @@
+{
+    "config": {
+        "phases": [
+            {
+                "duration": 1,
+                "arrivalRate": 5,
+                "name": "Normal using of application 5 users per second, duration 30 seconds"
+            }
+        ]
+    }
+}

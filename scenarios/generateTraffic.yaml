@@ -1,0 +1,15 @@
+scenarios:
+  - name: "Generate traffic"
+    flow:
+      - log: "Ask for example data"
+      - get:
+          url: "{{example}}"
+      - log: "Add some example data"
+      - post:
+          url: "{{example}}"
+      - log: "Add some second example data"
+      - post:
+          url: "{{example}}"
+      - log: "Ask for second example data"
+      - get:
+          url: "{{example}}"

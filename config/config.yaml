@@ -1,0 +1,7 @@
+config:
+    target: "http://localhost"
+    variables:
+      example:
+      - "/example"
+      second_example:
+      - "second/example"
