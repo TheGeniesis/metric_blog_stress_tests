@@ -14,18 +14,8 @@ This application was created to generate traffic for [metric application](https:
 ## Installation
 - Run `make init` command in main directory
 
-## Run application
-- Run `make start` command in main directory
-- Open `http://localhost` to check if works
-- To generate some example traffic use [prepared stress tests project](https://github.com/TheGeniesis/metric_blog_stress_tests)
+## Generate traffic
+- Run `make generate` command in main directory
 
 ## Remove application
 - Run `make remove` command in main directory
-
-
-
-# Install all dependencies
-`npm i`
-
-# Running command
-`npm run artillery generateTraffic.yaml`
