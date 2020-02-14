@@ -6,8 +6,8 @@ services:
     volumes:
       - ./:/app
     networks:
-      - metric_article_network
+      - host
 
 networks:
-  metric_article_network:
+  host:
     external: true

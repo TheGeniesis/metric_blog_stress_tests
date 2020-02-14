@@ -9,7 +9,7 @@ scenarios:
           url: "{{example}}"
       - log: "Add some second example data"
       - post:
-          url: "{{example}}"
+          url: "{{second_example}}"
       - log: "Ask for second example data"
       - get:
-          url: "{{example}}"
+          url: "{{second_example}}"
