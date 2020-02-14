@@ -4,4 +4,4 @@ config:
       example:
       - "/example"
       second_example:
-      - "second/example"
+      - "/second/example"
