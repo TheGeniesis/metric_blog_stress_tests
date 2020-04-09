@@ -3,9 +3,9 @@
         "phases": [
             {
                 "duration": 480,
-                "arrivalRate": 5,
-                "name": "Normal using of application 5 users per second, duration 5 seconds",
-                "pool": 5
+                "arrivalRate": 1,
+                "rampTo": 3,
+                "name": "Normal using of application 1-3 users per second, duration 480 seconds"
             }
         ]
     }

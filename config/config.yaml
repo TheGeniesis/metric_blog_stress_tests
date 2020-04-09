@@ -5,3 +5,5 @@ config:
       - "/example"
       second_example:
       - "/second/example"
+      slow_example:
+      - "/slow/example"

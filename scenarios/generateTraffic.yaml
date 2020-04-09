@@ -7,9 +7,21 @@ scenarios:
       - log: "Add some example data"
       - post:
           url: "{{example}}"
-      - log: "Add some second example data"
-      - post:
-          url: "{{second_example}}"
       - log: "Ask for second example data"
       - get:
           url: "{{second_example}}"
+      - log: "Add some second example data"
+      - post:
+          url: "{{second_example}}"
+      - log: "Ask for slow example data"
+      - get:
+          url: "{{slow_example}}"
+      - log: "Add some slow example data"
+      - post:
+          url: "{{slow_example}}"
+      - log: "Edit some slow example data"
+      - put:
+          url: "{{slow_example}}"
+      - log: "Delete some slow example data"
+      - delete:
+          url: "{{slow_example}}"
