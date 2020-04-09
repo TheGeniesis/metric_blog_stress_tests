@@ -1,0 +1,17 @@
+version: '2'
+tasks:
+  init:
+    desc: Initialize basic config to run application
+    cmds:
+      - test -f docker-compose.yaml || cp docker-compose.yaml.dist docker-compose.yaml
+      - docker-compose run -T --rm node npm i
+
+  generate:
+    desc: Run basic scenarios
+    cmds:
+      - docker-compose run -T --rm node npm run artillery generateTraffic.yaml
+
+  remove:
+    desc: Remove application
+    cmds:
+      - docker-compose down -v

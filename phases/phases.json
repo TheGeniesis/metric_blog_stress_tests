@@ -2,10 +2,12 @@
     "config": {
         "phases": [
             {
-                "duration": 5,
+                "duration": 480,
                 "arrivalRate": 5,
-                "name": "Normal using of application 5 users per second, duration 5 seconds"
+                "name": "Normal using of application 5 users per second, duration 5 seconds",
+                "pool": 5
             }
         ]
     }
 }
+

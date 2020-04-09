@@ -7,15 +7,21 @@ This application was created to generate traffic for [metric application](https:
 ## Pre-requirements
 - [Docker](https://www.docker.com/)
 - [Docker-compose](https://docs.docker.com/compose/)
-- Unix system (to run [makefile](https://www.gnu.org/software/make/manual/html_node/Introduction.html))
+- [Task](https://taskfile.dev) (optional, you can run commands from `taskfile.yaml` manually)
 
 > Application wasn't tested on Windows
 
 ## Installation
-- Run `make init` command in main directory
+- Run `task init` command in main directory
 
 ## Generate traffic
-- Run `make generate` command in main directory
+- Run `task generate` command in main directory
+> Application generates traffic for http://localhost by default.
+> 
+>To change it, please change `config.target` in `config/config.yaml` file 
 
 ## Remove application
-- Run `make remove` command in main directory
+- Run `task remove` command in main directory
+
+## Custom scenarios
+To add/modify current scenarios please edit `phases/phases.json` file 
